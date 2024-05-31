@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>나는 누구인가</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1">
+    <script>
+        window.onload = function(){
+            function sectionChange(sectionId) {
+                var section = ['main', 'life', 'hobby'];
+                for (var i = 0; i < section.length; i++) {
+                    var id = section[i];
+                    if (id === sectionId) {
+                        document.getElementById(id).style.display = 'block';
+                    } else {
+                        document.getElementById(id).style.display = 'none';
+                    }
+                }
+            }
+            document.getElementById('move1').onclick = function() {
+                sectionChange('main');
+            };
+            document.getElementById('move2').onclick = function() {
+                sectionChange('life');
+            };
+            document.getElementById('move3').onclick = function() {
+                sectionChange('hobby');
+            };
+            
+        }
+    </script>
+    <style>
+        #main {
+            display: none;
+            margin-top: 1em;
+        }
+        img {
+            float: left;
+            width: 40%; height: auto;
+            margin-right: 1em;
+        }
+        #mainP {
+            width: auto;
+        }
+        #hobby {
+            margin-top: 1em;
+            margin-left: 5em;
+            margin-right: 5em;
+            height: 500px;
+        }
+        .move{
+            margin: 0.5em 1em;;
+            cursor: pointer;
+            padding: 0.5em 1em;
+            display: inline-block;
+            border: 2px solid;
+            border-color: black;
+            border-radius: 5px;
+            text-align: right;
+        }
+        .h1{
+            width: 200px;
+        }
+        #top{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            padding: 1em;
+            align-items: center;
+        }
+        .section {
+            display: none;
+            margin-top: 2em;
+        }
+        #life{
+            text-align: center;
+        }
+        
+        
+    </style>
+</head>
+<body>
+   <div>
+    <div id="top">
+        <h1 id="h1">KYH</h1>
+        <hr>
+        <p id="move1" class="move">메인</p>
+        <p id="move2" class="move">인생사</p>
+        <p id="move3" class="move">취미</p>
+    </div>
+    <hr>
+    <div id="main" class="section">
+        <img src="./myface.jpg" alt="사진" width="300">
+        <div id="mainP">
+        <p><b>이름 : 김영현(YoungHyeon Kim) 나이 : 만 20세 (2024년 기준)</b></p>
+        <p>강원대학교를 다니고 있는 대학생입니다.</p> 
+        <p>전공은 컴퓨터 공학이고, 
+            열심히 공부해서 사회에 나간 뒤 돈을 많이 버는 것이 꿈입니다.</p>
+        <p>인생의 좌우명은 '뭐든 적당히 하고 되도록 편하게 살자'입니다.
+        </p>
+        </div>
+    </div>
+
+    <div id="life" class="section">
+        <h2><i>인생 회고록(현 20세)</i></h2>
+        <br>
+        <P><b>.</P>
+        <p>.</p>
+        <p>.</b></p>
+        <h3>2004년 강릉에서 탄생</h3>
+        <br>
+        <p>2008년 동도어린이집 입소 및 중퇴</p>
+        <br>
+        <p>2009년 경포 유치원 입학</p>
+        <br>
+        <p>2010년 경포 유치원 졸업</p>
+        <br>
+        <p>2011년 율곡 초등학교 입학</p>
+        <br>
+        <p>2016년 율곡 초등학교 졸업</p>
+        <br>
+        <p>2017년 관동 중학교 입학</p>
+        <br>
+        <p>2019년 관동 중학교 졸업</p>
+        <br>
+        <p>2020년 명륜 고등학교 입학</p>
+        <br>
+        <p>2022년 여러모로 망함과 동시에 고등학교 졸업</p>
+        <br>
+        <p><b>2023년 강원대학교 삼척캠퍼스에서 1년간 치욕스러운 유배생활을 했으나 심기일전하여 춘천캠퍼스로 전과하는데 성공! </b></p>
+        <br>
+        <p>2024년 춘천에서 자취하며 세월의 흐름에 몸을 맡기며 사는 중(현재)</p>
+        <P><b>.</P>
+        <p>.</p>
+        <p>.</b></p>
+    </div>
+
+    <div id="hobby" class="section">
+            <h3>미식</h3>
+            <p>&nbsp;삶을 살아감에 있어서 무언가를 먹는다는 것은 필수적인 행위입니다.
+            그렇기에 식사를 하면서 행복을 느낄 수 있다는 것이 정말 축복 받은 일이라고 생각합니다.
+            생명체라면 반드시 해야만 하는 일을 하면서 즐거움까지 얻을 수 있다니 이 얼마나 속 편한 일입니까?
+            다만, 저는 이 단순한 이치에서 한 발자국 더 나아가 깨달았습니다. 
+            배고플 때 뭘 먹어도 맛있게 먹을 수 있다면, 배고플 때 맛있는 것 먹으면 더 맛있게 먹을 수 있다는 사실을 말입니다.
+            따라서 저는 맛있는 음식을 먹는 것이 좋습니다. 맛난 걸 먹으면 삶의 보람, 만족, 행복 등을 느낍니다.
+            그래서 저는 다양한 음식의 맛과 향, 식감 등을 느끼고 체험해 보는 것에 적지 않은 관심과 흥미를 가지고 있습니다.
+            맛있는 음식을 새로이 발견하고 늘려나가는 것은 미식을 하면서 느끼는 또다른 즐거움입니다.</p>
+            <br>
+            <h3>게임</h3>
+            <p>&nbsp;게임은 요즘 시대에 가장 흔하고 평범한 취미라고 생각합니다. 다양한 사람들이 다양한 게임을 즐기는 시대이니 말입니다.
+                저 또한 너무 경쟁에 과열된 장르나 어려운 내용의 게임이 아니라면 대체로 재밌게 플레이하는 편입니다.
+                개인적으로 게임은 어디까지나 즐거움과 민족감을 얻기 위한 수단에 불과하다고 생각하기 때문에 스트레스를 받으면서 게임하는 것은 지양하는 편입니다.
+                그래서 즐겁게 플레이 했던 기억이 남는 게임을 몇 가지 소개하자면, 우선 플레이 하면서 모험을 하는 느낌과 성취감을 매우 크게 느낄 수 있었던 "엘든링",
+                친한 사람들과 함께하면 정말 다채로운 즐거움을 느낄 수 있는 "마인크래프트", 어른의 즐거움을 느낌과 동시에 뇌에서 도파민이 마구 솟구치는 듯한 "리치마작"
+                나와 고등학교 시절을 함께 했던 "냥코대전쟁" 등을 들 수 있습니다.
+            </p>
+    </div>
+   </div>
+</body>
+</html>
